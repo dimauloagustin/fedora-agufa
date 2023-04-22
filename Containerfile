@@ -21,7 +21,7 @@ RUN chmod +x /tmp/build.sh && /tmp/build.sh
 # vscode
 RUN flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 RUN flatpak install -y org.freedesktop.Sdk/x86_64/22.08
-RUN flatpak install flathub com.visualstudio.code
+RUN flatpak install -y flathub com.visualstudio.code
 
 # clean up and finalize container build
 RUN rm -rf \
