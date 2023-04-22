@@ -18,6 +18,9 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 COPY build.sh /tmp/build.sh
 RUN chmod +x /tmp/build.sh && /tmp/build.sh
 
+# vscode
+RUN flatpak install flathub com.visualstudio.code
+
 # clean up and finalize container build
 RUN rm -rf \
         /tmp/* \
