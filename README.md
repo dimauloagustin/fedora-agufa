@@ -1,4 +1,4 @@
-# Starting point
+# fedora-agufa
 
 [![build-ublue](https://github.com/dimauloagustin/fedora-agufa/actions/workflows/build.yml/badge.svg)](https://github.com/dimauloagustin/fedora-agufa/actions/workflows/build.yml)
 
