@@ -19,6 +19,7 @@ COPY build.sh /tmp/build.sh
 RUN chmod +x /tmp/build.sh && /tmp/build.sh
 
 # vscode
+RUN flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 RUN flatpak install flathub com.visualstudio.code
 
 # clean up and finalize container build
