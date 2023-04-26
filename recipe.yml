@@ -26,7 +26,7 @@ rpms:
   # needed for yafti (the first boot installer) (remove if you're not using yafti)
   - python3-pip
   - libadwaita # libadwaita comes with silverblue, but not with other flavors
-  # add your own below
+  - code
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
